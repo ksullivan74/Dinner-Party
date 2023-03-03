@@ -1,12 +1,13 @@
 function main() {
-  const guests = getGuests();
+  const guests = getGuests(); // DONE
   const tables = {
     "Table 1": [],
     "Table 2": []
-  };
+  }; //DONE
 
   for (const guest of guests) {
-    const table1Occupations = tables["Table 1"].map(g => g.occupation);
+    const table1Occupations = tables["Table 1"].map(g => g.occupation); //Done
+   // console.log(table1Occupations)
     if (table1Occupations.includes(guest.occupation)) {
       tables["Table 2"].push(guest);
     } else {
